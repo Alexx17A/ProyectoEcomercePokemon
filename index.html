@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <style>
+        body {
+            background-color: #f7c945;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header img {
+            width: 200px;
+            margin: 20px auto;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .search-bar input, .search-bar select, .search-bar button {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+        .pokemon-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .pokemon-card {
+            background-color: #ff66a3;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .pokemon-card img {
+            width: 100px;
+        }
+        .pokemon-card button {
+            background-color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="pokemon-logo.png" alt="Pokémon Logo">
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Busca tu Pokémon">
+        <button>Buscar</button>
+        <select>
+            <option>Tipo de Pokémon</option>
+        </select>
+        <button>Buscar</button>
+    </div>
+
+    <div class="pokemon-container">
+        <div class="pokemon-card">
+            <img src="bulbasaur.png" alt="Bulbasaur">
+            <h3>#001 Bulbasaur</h3>
+            <button>Ver Gráfica</button>
+        </div>
+        <div class="pokemon-card">
+            <img src="ivysaur.png" alt="Ivysaur">
+            <h3>#002 Ivysaur</h3>
+            <button>Ver Gráfica</button>
+        </div>
+        <!-- Agrega más tarjetas aquí -->
+    </div>
+
+</body>
+</html>
